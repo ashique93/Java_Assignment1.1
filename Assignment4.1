@@ -1,0 +1,37 @@
+package Practice1;
+
+public class Protected {
+	
+	public static void main(String args[])
+	{
+	Protected p = new Protected();
+	p.Method();
+	}
+	 protected void Method() {
+		 System.out.println("Inside Method with PROTECTED Modifier");
+		 }
+		 
+
+
+}
+
+//Program for accessing protected method of class named Protected in Practice2 package.
+
+package Practice2;
+
+
+import Practice1.Protected;
+
+
+public class Protected2 extends Protected{
+	
+	public static void main (String args[]){
+		
+		
+		Protected2 p = new Protected2();
+		
+		p.Method();
+	}
+}
+
+
